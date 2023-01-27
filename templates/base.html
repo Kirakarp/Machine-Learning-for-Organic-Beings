@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Machine Learning for Organic Beings</title>
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+
+  <link href="{{ url_for('static', filename='icon.png') }}" rel="icon">
+  
+</head>
+
+<body>
+  <!-- Navbar -->
+  <section id = "head">
+    <nav id = "navbar">
+      <ul>
+        <li id = "homeLink"><a href ="index">home</a></li>
+        <li id = "projectLink"><a href ="project">projects</a></li>
+        <li id = "learnLink"><a href ="learn">learn</a></li>
+        <li id = "contactLink"><a href ="contact">contact</a></li>
+        <!--<div class= "search"><li><input type ="search" placeholder="Search" class= "searchbar"></input></li></div>-->
+      </ul>
+
+
+    </nav>
+
+  
+
+  </section>
+    <nav id = "stickyNav">
+      <ul>
+        <li><a href ="index"><img src = "{{ url_for('static', filename='1.png') }}"/></a></li>
+        <li><a href ="project"><img src = "{{ url_for('static', filename='2.png') }}"/></a></li>
+        <li><a href ="learn"><img src = "{{ url_for('static', filename='3.png') }}"/></a></li>
+        <li><a href ="contact"><img src = "{{ url_for('static', filename='4.png') }}"/></a></li>
+      </ul>  
+    </nav>
+
+   {% block content %}
+   {% endblock %}
+ 
+
+</body>
+
+</html>

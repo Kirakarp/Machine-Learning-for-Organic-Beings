@@ -1,0 +1,78 @@
+{% extends "base.html" %} 
+{% block content %}
+
+<section id = "learn" class = "container">
+  <img id = "lStars" src = "{{ url_for('static', filename='stars.png') }}"></img>
+  <img id = "learnImg" src = "{{ url_for('static', filename='Organic.png') }}"></img>
+  <img id = "lStars" src = "{{ url_for('static', filename='stars.png') }}"></img>
+</section>
+
+<section id = "dataset" class = "container">
+ <div class = "block">
+    <h1>What is Machine Learning?</h1>
+    <p>Machine learning is the ability for computers to process data and predict output! Basically, that means that if I show the computer a million pictures of cats, it should be able to guess which of these pictures is a cat!</p>
+    <img src = "{{ url_for('static', filename='dog.png') }}" ></img>
+    <img src = "{{ url_for('static', filename='cat.png') }}" ></img>
+
+
+ </div>
+
+ <div class = "block">
+    <h1>How does a computer make a prediction?</h1>
+    <p>Using the power of math and statistics! Ever heard of trend lines and linear regression? See below for more!</p>
+ </div>
+
+ <div class = "block">
+    <h1>What sort of data will help my ML model make more accurate predictions?</h1>
+    <p>Good data can be hard to get. Luckily, there are many online websites that allow you to download datasets for free! (A dataset is something that contains pure information, for instance, like the model, weight and CO2 emissions of a collection of cars).</p>
+    <img src = "{{ url_for('static', filename='car.png') }}" ></img>
+ </div>
+
+
+</section>
+
+<section id = "prediction" class = "container">
+ <div class = "block">
+    <h1>What's linear regression?</h1>
+    <p>Linear regression is basically something we use in statistics to predict the output of an unknown value. What we do is take all the data and draw a line that kinda looks like it averages out where each output point is. However, as humans its hard for us to draw a line through the data and say that what we drew is the perfect average. That's where computers and machine learning comes in!</p>
+
+ </div>
+
+ <div class = "block">
+    <h1 style = "font-size:30px;">Example of Trend line found through Linear Regression</h1>
+    <img src = "{{ url_for('static', filename='linear.png') }}" style = "border-radius:10px; box-shadow: 10px 10px #dcd6ef;"></img>
+
+ </div>
+
+
+
+</section>
+
+<section id = "resources" class = "container">
+ <div class = "block">
+    <h1>ML Basics</h1>
+    <ul>
+        <li><a href ="https://www.youtube.com/watch?v=p7YXXieghto">Machine Learning essentials in just 3 minutes!</a></li>
+        <li><a href = "https://www.w3schools.com/python/python_ml_getting_started.asp">W3 Schools Machine Learning with Python</a></li>
+        <li><a href = "https://www.techwithtim.net/tutorials/machine-learning-python/">Tech with Tim Machine Learning</a></li>
+    </ul>
+ </div>
+ <div class = "block">
+    <h1>Datasets</h1>
+    <ul>
+        <li><a href = "https://www.kaggle.com/datasets">Kaggle Datasets</a></li>
+        <li><a href = "https://datasetsearch.research.google.com/">Google Dataset Search</a></li>
+        <li><a href = "https://open.canada.ca/en/open-data">Open datasets (Canada)</a></li>
+    </ul>
+ </div>
+ <div class = "block">
+    <h1>Regressions</h1>
+    <ul>
+        <li><a href = "https://www.youtube.com/watch?v=VmbA0pi2cRQ&t=3s">Linear Regression from Scratch</a></li>
+        <li><a href = "https://www.youtube.com/watch?v=H8kocPOT5v0">Polynomial Regression</a></li>    
+        <li><a href = "https://www.youtube.com/watch?v=KYNuzfn5Fx0">Multiple Linear Regression</a></li>
+    </ul>
+ </div>
+</section>
+{% endblock %}
+

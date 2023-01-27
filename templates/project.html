@@ -1,0 +1,42 @@
+{% extends "base.html" %} 
+{% block content %}
+
+<section id = "project" class = "container">
+<img id = "lStars" src = "{{ url_for('static', filename='idea.png') }}"></img>
+<div class = "block">
+    <h1>Explore Machine Learning Projects!</h1>
+    <h2>Or post your own!</h2>
+    <button id = "button">Login</button>
+    <input type = "search" id = "search" placeholder = "Search for a project..."></input>
+
+</div>
+
+</section>
+
+<section id = "explore" class = "container">
+<!-- allow user to add an image, link, and caption so they can post their own projects -->
+<div class = "block">
+   <img id = "lStars" src = "{{ url_for('static', filename='Machine Learning.png') }}"></img>
+   <a href = "https://replit.com/@Geeti/Machine-learning-practice#main.py">Machine Learning Practice problems + project</a>
+</div>
+
+<div class = "block">
+   <img id = "lStars" src = "{{ url_for('static', filename='Machine Learning.png') }}"></img>
+   <a href = "https://replit.com/@Geeti/Machine-learning-practice#main.py">Machine Learning Practice problems + project</a>
+</div>
+
+
+<div class = "block">
+   <img id = "lStars" src = "{{ url_for('static', filename='stars.png') }}"></img>
+   <a href = "https://replit.com/@Geeti/Machine-learning-practice#main.py">Machine Learning Practice problems + project</a>
+</div>
+
+<div class = "block">
+   <img id = "lStars" src = "{{ url_for('static', filename='idea.png') }}"></img>
+   <a href = "https://replit.com/@Geeti/Machine-learning-practice#main.py">Machine Learning Practice problems + project</a>
+</div>
+
+
+</section>
+{% endblock %}
+

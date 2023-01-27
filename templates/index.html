@@ -1,0 +1,43 @@
+{% extends "base.html" %} 
+{% block content %}
+
+<section id = "home" class = "container">
+
+
+
+  <img id = "flowers" src = "{{ url_for('static', filename='flower.png') }}"></img>
+  <div class = "block">
+  	<h1>Interested in Machine Learning?</h1>
+  	<p>Then you've come to the right place!</p>
+        <a id="button" href = "project">Get exploring now!</a>
+       
+  </div>
+  <img id = "flowers" src = "{{ url_for('static', filename='flower.png') }}"></img>
+  <img id = "titleImg" src = "{{ url_for('static', filename='Machine Learning.png') }}"></img>
+</section>
+<section id = "about" class = "container">
+  <div class = "block" id = "aboutBlock">
+      <h1>About Machine Learning for Organic Beings</h1>
+      <p>Machine Learning for Organic Beings is THE place for anybody to learn about machine learning and share their love for it!</p>
+  </div>
+  <div class = "block" id = "exploreBlock">
+      <h2>Explore</h2>
+      <p>Check out some of the great stuff your fellow machine learning enthusiasts have created and share your own <a href = "project">here</a>!</p>
+  </div>
+  <div class = "block" id = "learnBlock">
+      <h2>Learn</h2>
+      <p>Learn about the basics of machine learning and get great resources to kickstart your journey <a href = "learn">here</a>!</p>
+  </div>
+  <div class = "block" id = "contactBlock">
+      <h2>Contact</h2>
+      <p>Have a question or want to contribute to the improvement of this website? Find our contact information <a href = "contact">here</a>!</p>
+  </div>
+
+
+
+
+</section>
+
+
+{% endblock %}
+
